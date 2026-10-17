@@ -13,27 +13,25 @@
   <a href="https://github.com/Khoniv/techdrop-nivdev"><img src="https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Repo"></a>
   <img src="https://img.shields.io/badge/Unity-2021.3.45f2_LTS-black?style=for-the-badge&logo=unity&logoColor=white" alt="Unity">
   <img src="https://img.shields.io/badge/Platform-Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Platform Windows">
-  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License MIT">
 </p>
 
 ---
 
 ## 📌 Daftar Isi
-* [Tentang Proyek (About Project)](#-tentang-proyek-about-project)
+* [Tentang Proyek](#-tentang-proyek)
 * [Fitur Utama](#-fitur-utama)
 * [Galeri & Tangkapan Layar](#-galeri--tangkapan-layar)
-* [Manual Book & Panduan Bermain](#-manual-book--panduan-bermain)
+* [Panduan Permainan (Gameplay Guide)](#-panduan-permainan-gameplay-guide)
 * [Daftar Perangkat Keras yang Dikenalkan](#-daftar-perangkat-keras-yang-dikenalkan)
-* [Spesifikasi Sistem (System Requirements)](#-spesifikasi-sistem-system-requirements)
+* [Spesifikasi Sistem](#-spesifikasi-sistem)
 * [Cara Menjalankan & Instalasi](#-cara-menjalankan--instalasi)
-* [Teknologi yang Digunakan (Tech Stack)](#-teknologi-yang-digunakan-tech-stack)
-* [Struktur Direktori Repositori](#-struktur-direktori-repositori)
+* [Teknologi yang Digunakan](#-teknologi-yang-digunakan)
+* [Arsitektur & Struktur Direktori](#-arsitektur--struktur-direktori)
 * [Pengembang & Kontak](#-pengembang--kontak)
-* [Lisensi](#-lisensi)
 
 ---
 
-## 📖 Tentang Proyek (About Project)
+## 📖 Tentang Proyek
 
 **TechDrop 2.0** adalah sebuah game edukasi interaktif 2D yang dikembangkan menggunakan mesin game **Unity**. Game ini dirancang secara khusus untuk menjadi media pembelajaran interaktif mengenai **Perangkat Keras Komputer (Computer Hardware)**.
 
@@ -73,22 +71,20 @@ Banyak pemula, pelajar, dan mahasiswa sering merasa kesulitan atau ragu saat per
 
 ---
 
-## 🎮 Manual Book & Panduan Bermain
-
-> 📘 Untuk panduan teknis dan glosarium lengkap, silakan baca berkas [MANUAL_BOOK.md](MANUAL_BOOK.md).
+## 🎮 Panduan Permainan (Gameplay Guide)
 
 ### 1. Kontrol Dasar
-* **Klik Kiri Mouse (LMB)**: Memilih menu, beralih materi, menekan tombol pause/pengaturan.
-* **Klik Tahan & Seret (Drag & Drop)**: Mengambil komponen dari rak/baki dan mengarahkannya ke slot target.
-* **Lepas Klik**: Menjatuhkan komponen pada slot yang dituju.
+* **Klik Kiri Mouse (LMB)**: Memilih menu, membuka materi, dan menekan tombol navigasi.
+* **Klik Tahan & Seret (Drag & Drop)**: Mengambil komponen hardware dan mengarahkannya ke soket tujuan.
+* **Lepas Klik**: Menempatkan komponen pada slot yang dituju.
 
 ### 2. Aturan Permainan pada Mode Bermain
-1. **Target**: Setiap level memiliki jumlah target komponen tertentu yang harus dipasangkan ke posisinya.
-2. **Timer**: Terdapat waktu hitung mundur di pojok kiri atas. Pastikan seluruh komponen terpasang sebelum waktu habis.
-3. **Validasi**:
-   - Jika komponen dipasang pada slot yang **benar**, komponen akan mengunci otomatis dan memicu suara keberhasilan.
-   - Jika dipasang pada slot yang **salah**, komponen akan memantul kembali ke tempat semula.
-4. **Kemenangan**: Menyelesaikan seluruh komponen target tepat waktu untuk melaju ke level berikutnya.
+1. **Target**: Setiap level menentukan komponen tertentu yang harus dipasang dengan benar.
+2. **Timer**: Terdapat waktu hitung mundur di bagian atas layar. Selesaikan pemasangan sebelum waktu habis.
+3. **Validasi Slot**:
+   - Jika komponen ditempatkan pada posisi yang **benar**, komponen akan terkunci otomatis dan memicu suara notifikasi berhasil.
+   - Jika ditempatkan pada posisi yang **salah**, komponen akan otomatis memantul kembali ke baki inventaris.
+4. **Kemenangan**: Level selesai dan level berikutnya terbuka setelah semua komponen terpasang tepat waktu.
 
 ---
 
@@ -105,7 +101,7 @@ Banyak pemula, pelajar, dan mahasiswa sering merasa kesulitan atau ragu saat per
 
 ---
 
-## 💻 Spesifikasi Sistem (System Requirements)
+## 💻 Spesifikasi Sistem
 
 | Kategori | Kebutuhan Minimum |
 | :--- | :--- |
@@ -121,24 +117,24 @@ Banyak pemula, pelajar, dan mahasiswa sering merasa kesulitan atau ragu saat per
 ## 🚀 Cara Menjalankan & Instalasi
 
 ### Opsi 1: Menjalankan Langsung (Portable Executable)
-1. Clone repositori ini ke komputer Anda:
+1. Clone repositori ini:
    ```bash
    git clone https://github.com/Khoniv/techdrop-nivdev.git
    ```
-2. Masuk ke folder proyek dan klik ganda pada berkas:
+2. Buka folder proyek dan klik ganda pada:
    ```text
    TechDrop 2.0.exe
    ```
 3. Game langsung dapat dimainkan tanpa perlu instalasi tambahan.
 
 ### Opsi 2: Mengunduh Installer Resmi
-1. Buka halaman rilis di [itch.io: TechDrop](https://khonif-zakaria.itch.io/techdropdev).
-2. Unduh berkas `TechDrop Installer.exe`.
-3. Buka installer dan ikuti langkah pemasangan hingga selesai.
+1. Kunjungi halaman resmi di [itch.io: TechDrop](https://khonif-zakaria.itch.io/techdropdev).
+2. Unduh berkas **TechDrop Installer.exe**.
+3. Jalankan file installer dan ikuti petunjuk pemasangan hingga selesai.
 
 ---
 
-## 🛠️ Teknologi yang Digunakan (Tech Stack)
+## 🛠️ Teknologi yang Digunakan
 
 - **Game Engine**: [Unity](https://unity.com/) (Version 2021.3.45f2 LTS)
 - **Bahasa Pemrograman**: C# (.NET / Mono Framework)
@@ -147,27 +143,24 @@ Banyak pemula, pelajar, dan mahasiswa sering merasa kesulitan atau ragu saat per
 
 ---
 
-## 📂 Struktur Direktori Repositori
+## 📂 Arsitektur & Struktur Direktori
 
 ```text
 techdrop-nivdev/
 ├── docs/
 │   └── screenshots/          # Tangkapan layar dan banner game
-│       ├── banner.png
-│       ├── preview-1.png     # Menu Utama
-│       ├── preview-2.png     # Level Bermain
-│       ├── preview-3.png     # Mode Merakit
-│       ├── preview-4.png     # Modul Materi
-│       └── preview-5.png     # Game Selesai
-├── MonoBleedingEdge/         # Runtime library Mono untuk Unity
-├── TechDrop 2.0_Data/        # Aset game, audio, prefabs, dan scene compiled
-├── TechDrop 2.0.exe          # Berkas eksekusi utama game Windows
-├── UnityCrashHandler64.exe   # Crash handler terintegrasi Unity
-├── UnityPlayer.dll           # Unity runtime player library
-├── .gitignore                # Aturan pengecualian file git
-├── CONTRIBUTING.md           # Panduan kontribusi proyek
-├── LICENSE                   # Lisensi open-source (MIT)
-├── MANUAL_BOOK.md            # Buku panduan & petunjuk penggunaan lengkap
+│       ├── banner.png        # Banner header TechDrop
+│       ├── preview-1.png     # Tampilan Menu Utama
+│       ├── preview-2.png     # Tampilan Mode Bermain
+│       ├── preview-3.png     # Tampilan Mode Merakit
+│       ├── preview-4.png     # Tampilan Modul Materi
+│       └── preview-5.png     # Tampilan Game Selesai
+├── MonoBleedingEdge/         # Runtime library Mono Unity
+├── TechDrop 2.0_Data/        # Aset game, audio, prefabs, dan scene data
+├── TechDrop 2.0.exe          # Berkas eksekusi utama game (Windows)
+├── UnityCrashHandler64.exe   # Crash handler bawaan Unity
+├── UnityPlayer.dll           # Runtime player engine Unity
+├── .gitignore                # Aturan pengecualian berkas git
 └── README.md                 # Dokumentasi utama proyek
 ```
 
@@ -179,9 +172,3 @@ techdrop-nivdev/
 * **GitHub**: [@Khoniv](https://github.com/Khoniv)
 * **itch.io**: [khonif-zakaria.itch.io](https://khonif-zakaria.itch.io/techdropdev)
 * **Email**: [oniefzk11@gmail.com](mailto:oniefzk11@gmail.com)
-
----
-
-## 📄 Lisensi
-
-Proyek ini didistribusikan di bawah lisensi **MIT License**. Lihat berkas [LICENSE](LICENSE) untuk informasi lebih lanjut.
