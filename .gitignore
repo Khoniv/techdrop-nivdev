@@ -1,0 +1,35 @@
+# ==============================================================================
+# TechDrop 2.0 - Git Ignore Configuration
+# ==============================================================================
+
+# OS generated files
+[Tt]humbs.db
+[Ee]hthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+*.stackdump
+
+# Logs and Temporary files
+*.log
+*.tmp
+[Tt]emp/
+[Ll]ogs/
+[Ll]og/
+
+# IDE / Editor folders
+.vs/
+.vscode/
+.idea/
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.sln.docstates
+
+# Backups and Crash Dumps
+*.bak
+*.orig
+*.dmp
+*.crash
